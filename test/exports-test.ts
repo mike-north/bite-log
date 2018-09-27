@@ -5,10 +5,11 @@ import { LoggerWithStyles } from 'bite-log';
 QUnit.module('Public API is correct');
 
 QUnit.test('Logger as a default export', assert => {
-  assert.equal(typeof BL.default, 'function', 'it\'s a function');
+  assert.equal(typeof BL.default, 'function', "it's a function");
   assert.deepEqual(
     Object.keys(BL),
     ['default', 'Level'],
+
     'aside from types, there is a "default" and "Level" export'
   );
   assert.deepEqual(
